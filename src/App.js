@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Navbar, Counter } from "./components";
+import { Navbar, Counter, Footer } from "./components";
 import "./App.css";
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar title="Counter" />
       <Counter counter={counter} setCounter={setCounter} />
+      <Footer />
     </div>
   );
 }

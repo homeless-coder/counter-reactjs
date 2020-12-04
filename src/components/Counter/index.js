@@ -5,7 +5,7 @@ import { Box, Grid, Typography, Button } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     flex: 1,
-    height: "100vh",
+    height: "90vh",
   },
   form: {
     backgroundColor: "#232626",
