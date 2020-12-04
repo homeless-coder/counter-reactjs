@@ -29,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Counter = ({}) => {
+const Counter = ({ counter, setCounter }) => {
   const classes = useStyles();
 
   return (
@@ -46,11 +46,15 @@ const Counter = ({}) => {
             <Typography className={classes.instructions}>
               Press the button:
             </Typography>
-            <Button variant="contained" size="large">
+            <Button
+              variant="contained"
+              size="large"
+              onClick={() => setCounter(++counter)}
+            >
               Count
             </Button>
             <Typography variant="h1" className={classes.counter}>
-              0
+              {counter}
             </Typography>
           </Box>
         </Grid>
